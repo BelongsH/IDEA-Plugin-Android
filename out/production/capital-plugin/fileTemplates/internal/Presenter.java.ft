@@ -1,0 +1,24 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+
+
+#parse("File Header.java")
+public class ${NAME}PresenterImpl implements ${NAME}Contract.${NAME}Presenter{
+
+    private ${NAME}Contract.${NAME}View mView;
+
+    public ${NAME}PresenterImpl(${NAME}Contract.${NAME}View mView) {
+        this.mView = mView;
+    }
+
+
+    @Override
+    public void subscribe() {
+
+    }
+
+    @Override
+    public void unSubscribe() {
+
+    }
+}

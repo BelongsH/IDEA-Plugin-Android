@@ -1,0 +1,18 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+import com.aw.common.base.presenter.BasePresenter;
+import com.aw.common.base.view.BaseView;
+
+
+#parse("File Header.java")
+public interface ${NAME}Contract{
+
+ public interface ${NAME}View extends BaseView {
+
+ }
+
+ public interface ${NAME}Presenter extends BasePresenter {
+
+ }
+
+}

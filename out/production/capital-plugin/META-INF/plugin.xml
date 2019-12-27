@@ -1,0 +1,41 @@
+<idea-plugin>
+    <id>com.lexiangbao.apple.plugin</id>
+    <name>Apple</name>
+    <version>1.2.1</version>
+    <vendor email="liuhuiliang@lexiangbao.com" url="http://www.lexiangbao.com">lexiangbao</vendor>
+
+    <description><![CDATA[
+      a tools for lexiangbao <br>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      nice to see you,help you become better .<br>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0" />
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="CreateDataSourceAction" class="com.capital.datasource.CreateDataSourceAction"
+            text="DataResource" description="Create an DataSource class">
+            <add-to-group group-id="NewGroup" anchor="first" />
+        </action>
+
+        <action id="CreateContractAction" class="com.capital.datasource.CreateContractAction"
+            text="Contract" description="Create an Contract class">
+            <add-to-group group-id="NewGroup" anchor="first" />
+        </action>
+    </actions>
+
+</idea-plugin>

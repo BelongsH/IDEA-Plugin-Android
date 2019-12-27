@@ -1,0 +1,16 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+#parse("File Header.java")
+public class ${NAME} implements ORIGIN_DATA_SOURCE{
+
+    private ORIGIN_LOCAL_DATA_SOURCE localDataSource;
+
+    private ORIGIN_REMOTE_DATA_SOURCE remoteDataSource;
+
+    public ${NAME}() {
+        localDataSource = new ORIGIN_LOCAL_DATA_SOURCE();
+        remoteDataSource = new ORIGIN_REMOTE_DATA_SOURCE();
+    }
+
+
+}
